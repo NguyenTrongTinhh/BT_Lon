@@ -172,9 +172,7 @@
      position: relative;
  }
  
- /* .menu-right li{
-     position: relative;
- } */
+
  
  .menu-right li>ul a{
     display: block;
