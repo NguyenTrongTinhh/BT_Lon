@@ -549,6 +549,7 @@
    .footer-item__link{
        text-decoration: none;
        color: #D8D8D8;
+       width: 100%;
      
    }
    .footer-item__link:hover{
