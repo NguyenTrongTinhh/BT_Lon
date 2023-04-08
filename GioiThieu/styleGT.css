@@ -136,7 +136,7 @@ a{
 .menu li:after,
 .menu a:before,
 .menu a:after {
-    background-color: #2980b9;
+    background-color: #3dabf5bb;
     position: absolute;
     height: 25%;
     left: 50%;

@@ -41,7 +41,7 @@
         <div class="grid">
             <div class="header">
                 <div class="logo">
-                    <a href="#"><img src="../img/logo.png" width="80%" height="80px" alt=""></a>
+                    <a href="#"><img src="../CuaHang/img/logo.jpg" width="80%" height="86px" alt=""></a>
                 </div>
                 <div class="menu">
                     <li><a href="../TrangChu/index.html">Trang chủ</a></li>
@@ -73,13 +73,51 @@
                 <h1>Cửa Hàng</h1>
             </div>
             <div class="content" id="tieuDe">
-                <a href="../html/trangChu.html">Trang chủ / </a>
-                <a href="../html/BH_BH.html">Cửa hàng</a>
+                <a href="../TrangChu/index.html">Trang chủ / </a>
+                <a href="../CuaHang/cuaHang.html">Cửa hàng</a>
             </div>
         </div>
-    </div>
     <section class="container">
-        
+        <div class="container row_boLoc pl-0">
+            <div class="row">
+                <div class="boLoc">
+                    <label for="txtLoc" class="">Xem kết quả theo</label>
+                    <select id="txtLoc" class="Loc" name="" style="">
+                        <option>Thứ tự mặc định</option>
+                        <option value="giaTang">Giá tăng dần</option>
+                        <option value="giaGiam">Giá giảm dần</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <article class="art1 mt-2">
+            <h5>Danh mục sản phẩm</h5>
+            <ul class="mr-5 pl-0" id="danhMucSP" onclick="danhMucSP()">
+                <li><a href="#" class="border" onclick="hienThi(aosomi)">Áo sơ mi</a></li>
+                <li><a href="#" class="border">Áo thun</a></li>
+                <li><a href="#" class="border">Quần</a></li>
+                <li><a href="#" class="border">Giày</a></li>
+            </ul>
+        </article>
+        <article class="art2 mt-2 ml-5">
+            <div class="row" id="dsBanHang">
+                <div class="sanPham">
+                    <a href="#"><img src="https://tse2.mm.bing.net/th?id=OIP.q-8GNYrQUW1yLQlZb7-zLwHaHa&pid=Api&P=0" alt="" class="border"></a>
+                    <p>Áo thun đen</p>
+                    <p>250,000đ</p>
+                </div>
+                <div class="row">
+                    <div class="pagination-nav text-center mtb_20">
+                        <ul id="soTrang">
+                            <li><a href="#"><i class="fa fa-angle-left"></i></a></li>
+                            <li class="active"><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#"><i class="fa fa-angle-right"></i></a></li>
+                        </ul>
+                    </div>
+            </div>
+        </article>
     </section>
 
     <footer class="footer" style="margin-top: 50px;">
@@ -111,13 +149,13 @@
                     <h3 class="footer__heading">Menu</h3>
                     <ul class="footer-list footer-list--menu">
                         <li class="footer-item">
-                            <a href="../html/trangChu.html" class="footer-item__link">Trang chủ</a>
+                            <a href="../TrangChu/index.html" class="footer-item__link">Trang chủ</a>
                         </li>
                         <li class="footer-item">
-                            <a href="../html/BH_GT.html" class="footer-item__link">Giới thiệu</a>
+                            <a href="../GioiThieu/gioiThieu.html" class="footer-item__link">Giới thiệu</a>
                         </li>
                         <li class="footer-item">
-                            <a href="../html/BH_BH.html" class="footer-item__link">Cửa hàng</a>
+                            <a href="../CuaHang/cuaHang.html" class="footer-item__link">Cửa hàng</a>
                         </li>
                         <li class="footer-item">
                             <a href="../html/TinTuc.html" class="footer-item__link">Tin tức</a>
