@@ -21,8 +21,6 @@ body {
     }
 }
 
-/* Trang tham khảo body:https://viblo.asia/p/14-css-tao-hieu-ung-cho-background-tuyet-dep-LzD5djaeZjY */
-
 .grid {
     width: 1200px;
     max-width: 100%;
@@ -189,10 +187,6 @@ a{
     justify-content: space-between;
     position: relative;
 }
-
-/* .menu-right li{
-    position: relative;
-} */
 
 .menu-right li>ul a{
    display: block;
