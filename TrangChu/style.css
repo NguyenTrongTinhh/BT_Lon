@@ -4,6 +4,24 @@
      font-family: Arial, Helvetica, sans-serif;
      box-sizing: border-box;
  }
+ body{
+    background: linear-gradient(-45deg, #f58d6df6, #b46584af, #75ccec, #6ff8d8d9);
+    background-size: 400% 400%;
+    animation: gradient 10s ease infinite;
+}
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
  .grid{
      width: 1200px;
      max-width: 100%;
@@ -303,7 +321,7 @@
      margin-top: 40px;
     text-align: center;
     margin-bottom: 50px;
-    color: violet;
+    color: rgb(222, 97, 222);
     position: relative;
  }
  .noiBat h1::before{
@@ -377,7 +395,7 @@
      margin-top: 40px;
     text-align: center;
     margin-bottom: 50px;
-    color: violet;
+    color: rgb(222, 97, 222);
     position: relative;
  }
  .about h1::before{
@@ -413,7 +431,7 @@
  }
  .about-content-right h3{
      text-align: center;
-     color: #00BFFF;
+     color: rgba(0, 0, 255, 0.749);
  }
  .about-content-right button{
      height: 30px;
