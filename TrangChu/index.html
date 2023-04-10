@@ -9,27 +9,6 @@
     <link rel="stylesheet" href="../TrangChu/style.css">
     <link rel="stylesheet" href="../TrangChu/bootstrap-4.6.1-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../TrangChu/fontawesome-free-6.0.0-web/css/all.min.css">
-
-    <script src="../js/jquery-3.6.0.js"></script>
-    <script src="../../bootstrap-4.6.1-dist/js/bootstrap.min.js"></script>
-    <script src="../js/dataBanHang.js"></script>
-    <script src="../js/dataTinTuc.js"></script>
-    <script src="../js/Data_DKDN.js"></script>
-    <script>
-        window.onload = function () {
-            let kiemTraDN = JSON.parse(localStorage.getItem("flag"));
-            if (kiemTraDN) {
-                document.querySelector("#khongDN").style.display = "none";
-                document.querySelector("#sauDN").style.display = "block";
-            }
-
-            $("#dangxuat").click(function () {
-                document.querySelector("#khongDN").style.display = "block";
-                document.querySelector("#sauDN").style.display = "none";
-                localStorage.setItem("flag", false)
-            })
-        }
-    </script>
 </head>
 
 <body>
@@ -157,7 +136,8 @@
                             <i class="fas fa-star"></i>
                             <p>
                                 Trẻ trung, nam tính và hiện đại là điều bạn có thể dễ dàng nhận thấy trong thiết kế giày
-                                chelsea boots nam này.Giày Nam Da Bò Thật Trơn Xịn Không Nhăn Da.Những mặt hàng giày dép da thật 100%. Trải qua hơn 30 năm sản xuất
+                                chelsea boots nam này.Giày Nam Da Bò Thật Trơn Xịn Không Nhăn Da.Những mặt hàng giày dép
+                                da thật 100%. Trải qua hơn 30 năm sản xuất
                                 và thiết kế giày dép, chúng tôi mang đến cho khách hàng những đôi giày và dép chất lượng
                                 nhất hiện nay.
                             </p>
@@ -180,11 +160,11 @@
                     </div>
                     <div class="about-content-right">
                         <h3>
-                         Tại sao nên chọn chúng tôi ?
+                            Tại sao nên chọn chúng tôi ?
                         </h3>
                         <p>Bạn nên chọn cửa hàng của tôi vì nên dây có những sẵn phẩm tốt nhất và đáp ứng đầy đủ nhu cầu
                             của bạn. Vì vậy hay chọn chúng tôi <3. </p>
-                                <button><a href="../html/BH_GT.html"">Tìm hiểu thêm</a></button>
+                                <button><a href="../GioiThieu/gioiThieu.html"">Tìm hiểu thêm</a></button>
                         <div class=" about-content-right-botom">
                                         <div class="item">
                                             <img src="../TrangChu/img/24_7.jpg" alt="">
@@ -239,13 +219,13 @@
                     <h3 class="footer__heading">Menu</h3>
                     <ul class="footer-list footer-list--menu">
                         <li class="footer-item">
-                            <a href="../html/trangChu.html" class="footer-item__link">Trang chủ</a>
+                            <a href="../TrangChu/index.html" class="footer-item__link">Trang chủ</a>
                         </li>
                         <li class="footer-item">
-                            <a href="../html/BH_GT.html" class="footer-item__link">Giới thiệu</a>
+                            <a href="../GioiThieu/gioiThieu.html" class="footer-item__link">Giới thiệu</a>
                         </li>
                         <li class="footer-item">
-                            <a href="../html/BH_BH.html" class="footer-item__link">Cửa hàng</a>
+                            <a href="../CuaHang/cuaHang.html" class="footer-item__link">Cửa hàng</a>
                         </li>
                         <li class="footer-item">
                             <a href="../html/TinTuc.html" class="footer-item__link">Tin tức</a>
@@ -299,7 +279,6 @@
     <div class="footer1">
         <p>&#169; Bản quyền thuộc về Nguyễn Trọng Tính</p>
     </div>
-    <script src="../js/js.js"></script>
 </body>
 
 </html>
