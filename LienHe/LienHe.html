@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../LienHe/styleLienHe.css">
+    <link rel="stylesheet" href="../LienHe/bootstrap-4.6.1-dist/css/bootstrap.min.css">
+    <script src="../js/jquery-3.6.0.js"></script>
+    <script src="../LienHe/bootstrap-4.6.1-dist/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="../../fontawesome-free-6.0.0-web/css/all.min.css">
+    <title>Liên Hệ</title>
+</head>
+
+<body>
+    <header id="khongDN">
+        <div class="grid">
+            <div class="header">
+                <div class="logo">
+                    <a href="../TrangChu/trangChu.html"><img src="../LienHe/img/logo.jpg" width="80%" height="80px" alt=""></a>
+                </div>
+                <div class="menu">
+                    <li><a href="../TrangChu/trangChu.html">Trang chủ</a></li>
+                    <li><a href="../GioiThieu/gioiThieu.html">Giới thiệu</a></li>
+                    <li><a href="../CuaHang/cuaHang.html">Cửa hàng</a></li>
+                    <li><a href="../LienHe/LienHe.html">Liên hệ</a></li>
+                    <li><a href="../html/sitemap.html">SiteMap</a></li>
+                </div>
+                <div class="menu-right">
+                    <li><input type="text" placeholder="Tìm kiếm"> <i class="fa-solid fa-magnifying-glass"></i></li>
+                    <li class=" DKDN"><a href="../DangNhap/dangNhap.html">Đăng nhập / Đăng kí</a></li>
+                </div>
+            </div>
+        </div>
+    </header>
+    <header id="sauDN">
+        <div class="grid">
+            <div class="header">
+                <div class="logo">
+                    <a href="#"><img src="../LienHe/img/logo.jpg" width="80%" height="80px" alt=""></a>
+                </div>
+                <div class="menu">
+                    <li><a href="../html/trangChu.html">Trang chủ</a></li>
+                    <li><a href="../html/BH_GT.html">Giới thiệu</a></li>
+                    <li><a href="../html/BH_BH.html">Cửa hàng</a></li>
+                    <li><a href="../html/LienHe.html">Liên hệ</a></li>
+                    <li><a href="../html/sitemap.html">SiteMap</a></li>
+                </div>
+                <div class="menu-right">
+                    <li><input type="text" placeholder="Tìm kiếm"> <i class="fa-solid fa-magnifying-glass"></i></li>
+                    <li class="menuCap2">
+                        <a href="#"><i id="tk" class="fa-solid fa-circle-user"></i>Tài khoản</a>
+                        <ul class="nav">
+                            <li class="nav-item"><a href="#" class="nav-link">Thông tin tài khoản</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Thay đổi mật khẩu</a></li>
+                            <li class="nav-item" ><a href="#" class="nav-link" id="dangxuat">Đăng xuất</a></li>
+                            
+                        </ul>
+                    </li>
+                    <li><a href="../html/GioHang.html"><i class="fa-solid fa-cart-arrow-down"></i>Giỏ hàng </a></li>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="duongDan">
+        <div class="duongDan-content">
+            <div class="title">
+                <h1>Liên Hệ</h1>
+            </div>
+            <div class="content">
+                <a href="../TrangChu/trangChu.html">Trang chủ / </a>
+                <p>Liên hệ</p>
+            </div>
+        </div>
+    </div>
+    <div class="lienHe bg-light">
+        <div class="lienHe-content">
+            <div class="col-sm-6 p-0 container-fluid lienHe-left" id="lienHe">
+                <form action="" class="px-5 py-5 container-fluid bg-light">
+                    <h1 class="text-center">Gửi phản hồi cho tôi</h1>
+                    <div class="form-group" id="dau">
+                        <span id="error1" class="text-danger">*</span>
+                        <input id="hovaten" class="form-control" type="text" placeholder="Họ và tên">
+                    </div>
+                    <div class="form-group">
+                        <input id="diachiemail" class="form-control" type="text" placeholder="Địa chỉ Email">
+                    </div>
+                    <div class="form-group">
+                        <span id="error2" class="text-danger">*</span>
+                        <input id="sodienthoai" class="form-control" type="text" placeholder="Số điện thoại">
+                    </div>
+                    <div class="form-group">
+                        <span id="error3" class="text-danger">*</span>
+                        <textarea class="form-control" name="" id="loinhan" cols="30" rows="5"
+                            placeholder="Lời nhắn"></textarea>
+
+                    </div>
+                    <div class="form-group">
+                        <input class="col-sm-4 bg-success " id="buttonGui" type="button" value="Gửi đi">
+                    </div>
+
+                </form>
+            </div>
+            <div class="col-sm-6  p-0 container-fluid bg-light lienHe-right">
+                <div class="px-5  container-fluid">
+                    <div class=" py-5 title">
+                        <h1 class="text-center">Thông tin liên hệ</h1>
+                    </div>
+                    <div class="row py-2 px-2 content ">
+                        <div class="icon">
+                            <i class="fa-solid fa-location-dot px-3"></i>
+                        </div>
+                        <div class="thongTin">
+                            <p>12 Nguyễn Văn Bảo, Phường 4, Gò Vấp, Thành phố Hồ Chí Minh</p>
+                        </div>
+                    </div>
+                    <div class="row py-2 px-2 content ">
+                        <div class="icon">
+                            <i class="fa-solid fa-phone px-3"></i>
+                        </div>
+                        <div class="thongTin">
+                            <p> 0123456789</p>
+                        </div>
+                    </div>
+                    <div class="row py-2 px-2 content ">
+                        <div class="icon">
+                            <i class="fa-solid fa-envelope px-3"></i>
+                        </div>
+                        <div class="thongTin">
+                            <p>Email: ntt4803@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="row py-2 px-3 bottom ">
+                        <i class="fa-brands fa-facebook" title="Follow Facebook We"></i>
+                        <i class="fa-brands fa-instagram" title="Follow Instagram We"></i>
+                        <i class="fa-brands fa-twitter" title="Follow twitter We"></i>
+                        <i class="fa-brands fa-pinterest" title="Follow pinterest We"></i>
+                        <i class="fa-solid fa-square-rss" title="Follow rss We"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.856438834871!2d106.68526211454649!3d10.822296492290414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3174deb3ef536f31%3A0x8b7bb8b7c956157b!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBDw7RuZyBuZ2hp4buHcCBUUC5IQ00!5e0!3m2!1svi!2s!4v1651939928136!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <footer class="footer" style="margin-top: 50px;">
+        <div class="grid">
+            <div class="grid__row pt-3">
+                <div class="grid__column-2-4">
+                    <h3 class="footer__heading">Giới thiệu</h3>
+                    <ul class="footer-list">
+                        <li>
+                            <p>Chào mừng đến với TT shop</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="grid__column-2-4">
+                    <h3 class="footer__heading">Chăm sóc khách hàng</h3>
+                    <ul class="footer-list">
+                        <li class="footer-item">
+                            <a href="#" class="footer-item__link">Trung tâm trợ giúp</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="#" class="footer-item__link">Hướng dẫn mua hàng</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="#" class="footer-item__link">Giải đáp thắc mắc</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="grid__column-2-4">
+                    <h3 class="footer__heading">Menu</h3>
+                    <ul class="footer-list footer-list--menu">
+                        <li class="footer-item">
+                            <a href="../TrangChu/trangChu.html" class="footer-item__link">Trang chủ</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="../GioiThieu/gioiThieu.html" class="footer-item__link">Giới thiệu</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="../CuaHang/cuaHang.html" class="footer-item__link">Cửa hàng</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="../LienHe/LienHe.html" class="footer-item__link">Liên hệ</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="grid__column-2-4">
+                    <h3 class="footer__heading">Địa chỉ</h3>
+                    <ul class="footer-list">
+                        <li class="footer-item">
+                            <a href="#" class="footer-item__link"><i class="fa-solid fa-location-dot"></i> 12 Nguyễn Văn Bảo, Phường 4, Gò Vấp, Thành phố Hồ Chí Minh, Việt Nam</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="#" class="footer-item__link"><i class="fa-solid fa-phone"></i> 0123456789</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="#" class="footer-item__link"><i class="fa-solid fa-envelope"></i>
+                                ntt4803@gmail.com</a>
+                        </li>
+                        <li class="footer-item">
+                        </li>
+                </div>
+                <div class="grid__column-2-4">
+                    <h3 class="footer__heading">Mạng xã hội</h3>
+                    <ul class="footer-list footer-list--MangXH">
+                        <li class="footer-item">
+                            <a href="#" class="footer-item__link"><i class="fa-brands fa-facebook"></i> Facebook</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="#" class="footer-item__link"><i class="fa-brands fa-instagram-square"></i>
+                                Instagram</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="#" class="footer-item__link"><i class="fa-brands fa-twitter"></i> Twitter</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="#" class="footer-item__link"><i class="fa-brands fa-linkedin"></i> Linkedin</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+    </footer>
+    <div class="footer1">
+        <p>&#169; Bản quyền thuộc về Nguyễn Trọng Tính</p>
+    </div>
+    <script src="../js/lienhe.js"></script>
+    <script src="../js/js.js"></script>
+
+</body>
+
+</html>
