@@ -9,8 +9,26 @@
     <link rel="stylesheet" href="../TrangChu/style.css">
     <link rel="stylesheet" href="../TrangChu/bootstrap-4.6.1-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../TrangChu/fontawesome-free-6.0.0-web/css/all.min.css">
+    <script src="../TrangChu/js/jquery-3.6.0.js"></script>
+    <script src="../TrangChu/bootstrap-4.6.1-dist/js/bootstrap.min.js"></script>
+    <script src="../TrangChu/js/Data_cuaHang.js"></script>
+    <script src="../TrangChu/js/Data_DKDN.js"></script>
 </head>
+<script>
+    window.onload = function () {
+        let kiemTraDN = JSON.parse(localStorage.getItem("flag"));
+        if (kiemTraDN) {
+            document.querySelector("#khongDN").style.display = "none";
+            document.querySelector("#sauDN").style.display = "block";
+        }
 
+        $("#dangxuat").click(function(){
+            document.querySelector("#khongDN").style.display = "block";
+            document.querySelector("#sauDN").style.display = "none";
+            localStorage.setItem("flag",false)
+        })
+    }
+</script>
 <body>
     <header id="khongDN">
         <div class="grid">
@@ -274,6 +292,7 @@
     <div class="footer1">
         <p>&#169; Bản quyền thuộc về Nguyễn Trọng Tính</p>
     </div>
+    <script src="../TrangChu/js/js.js"></script>
 </body>
 
 </html>
