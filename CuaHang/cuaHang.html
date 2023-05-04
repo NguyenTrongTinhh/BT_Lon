@@ -19,7 +19,7 @@
 
         function napAllLoaiSP(dsLoaiSP) {
             dsLoaiSP.forEach(loai => {
-                let row = "<li><a href='CuaHang/cuaHang.html' class='border' onclick='setMaLoaiSP(" + loai.maLoai + ")'>" + loai.tenLoai + "</a></li>"
+                let row = "<li><a href='../CuaHang/cuaHang.html' class='border' onclick='setMaLoaiSP(" + loai.maLoai + ")'>" + loai.tenLoai + "</a></li>"
                 $("#danhMucSP").append(row);
             })
 
@@ -29,7 +29,7 @@
             let j = Math.abs(chon * 12);
             for (var i = (chon - 1) * 12; i < j; i++) {
                 let row = "<div class='sanPham'> " +
-                    "<a href='CuaHang/ch_ChiTiet.html'  onclick='setMaSP(" + dssp[i].masp + ")'> <img src='" + dssp[i].hinhanh + "' alt='photo' class='border' ></a> " +
+                    "<a href='../CH_ChiTiet/ch_ChiTiet.html'  onclick='setMaSP(" + dssp[i].masp + ")'> <img src='" + dssp[i].hinhanh + "' alt='photo' class='border' ></a> " +
                     "<p>" + dssp[i].tensp + "</p>" +
                     "<p>" + dssp[i].dongia + "đ</p>" +
                     "</div> </div> "

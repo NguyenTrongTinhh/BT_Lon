@@ -35,7 +35,7 @@
                 if (dssp[len].maLoai == temp.maLoai && dssp[len].masp != temp.masp) {
                     // alert(sp.maLoai)
                     row = " <div class='item' style='padding-left: 0;'>" +
-                        "<a href='ch_ChiTiet.html'  onclick='setMaSP(" + dssp[len].masp + ")'><img src='" + dssp[len].hinhanh + "' alt='photo'    class='border'></a> " +
+                        "<a href='../CH_ChiTiet/ch_ChiTiet.html'  onclick='setMaSP(" + dssp[len].masp + ")'><img src='" + dssp[len].hinhanh + "' alt='photo'    class='border'></a> " +
                         "<h6>" + dssp[len].tensp + "</h6>" +
                         "<p>" + dinhDangTienVN(dssp[len].dongia) + " VNĐ" + "<sup>đ</sup></p></div>"
                     $("#myGopY").append(row);
