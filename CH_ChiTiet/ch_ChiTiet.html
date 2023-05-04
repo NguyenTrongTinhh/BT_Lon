@@ -74,7 +74,140 @@
             </div>
         </div>
     </div>
- 
+    <section class="product">
+        <div class="grid row" style="margin: 0 auto;">
+            <div class="left row" id="myIMG">
+                <div class="left-imgleft">
+                    <img src="resources/img/aosmT11.jpg" alt="photo">
+                </div>
+                <div class="left-imgright">
+                    <img src="resources/img/aosmT11.jpg" alt="photo">
+                    <img src="resources/img/aosmT11.jpg" alt="photo">
+                    <img src="resources/img/aosmT11.jpg" alt="photo">
+                    <img src="resources/img/aosmT11.jpg" alt="photo">
+                </div>
+            </div>
+            <div class="right">
+                <div class="name">
+                    <h1 id="MyTen"></h1>
+                </div>
+                <div class="price">
+                    <p id="MyGia"> </p>
+                </div>
+                <div class="color">
+                    <p><span>Màu sắc:</span></p>
+                    <div class="nau">
+                        <input id="nau" type="radio" name="color" checked>
+                        <label for="nau" class=""><span>Nâu</span></label>
+                    </div>
+                    <div class="kem">
+                        <input id="kem" type="radio" name="color">
+                        <label for="kem" class="sd"> <span>Kem</span></label>
+                    </div>
+                    <div class="den">
+                        <input id="den" type="radio" name="color">
+                        <label for="den" class=""> <span>Đen</span></label>
+                    </div>
+                </div>
+                <div class="size">
+                    <p><span>Size:</span></p>
+                    <div class="x">
+                        <input id="x" type="radio" name="size" checked>
+                        <label for="x" class=""><span>X</span></label>
+                    </div>
+                    <div class="m">
+                        <input id="m" type="radio" name="size">
+                        <label for="m" class="sd"> <span>M</span></label>
+                    </div>
+                    <div class="l">
+                        <input id="l" type="radio" name="size">
+                        <label for="l" class=""> <span>L</span></label>
+                    </div>
+                </div>
+                <div class="quantity">
+                    <p style="padding-right: 20px;"><span>Số lượng:</span></p>
+                    <input type="number" id="soLuong" min="0" value="1" class="sll">
+                </div>
+                <div class="add" id="themVaoGH">
+                    <!-- <button>Thêm vào giỏ hàng<i class="fa-solid fa-cart-arrow-down" onclick="chonsp()"></i></button> -->
+                </div>
+                <div class="bottom">
+                    <div class="bottom-top">
+                        &#8744;
+                    </div>
+                    <div class="bottom-center">
+                        <div class="title row ">
+                            <div class="title-item MT">
+                                <p>MÔ TẢ SẢN PHẨM</p>
+
+                            </div>
+                            <div class="title-item DT">
+                                <p>CHÍNH SÁCH ĐỔI TRẢ</p>
+                            </div>
+                            <div class="title-item GH">
+                                <p>CHÍNH SÁCH GIAO HÀNG</p>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <div class="content-MT " style="font-size: 17px;">
+                                <p>
+                                    Màu sắc: Rêu/ Nâu/ Kem <br>
+                                    Size S ( eo ~65cm, nặng ~45kg)<br>
+                                    Size M ( eo ~68cm, nặng ~50kg)<br>
+                                    Size L ( eo ~72cm, nặng ~55kg)<br>
+                                    Chất liệu: kaki dày dặn <br>
+                                </p>
+                            </div>
+                            <div class="content-DT" style="font-size: 20px;">
+                                Shop chấp nhận đổi/trả hàng trong thời gian 03 ngày làm việc, áp dụng không đồng đều đối
+                                với từng mặt hàng và sản phẩm khác nhau.
+                            </div>
+                            <div class="content-GH" style="font-size: 20px;">
+                                Đơn hàng sẽ được giao cho Quý khách trong vòng 05 - 07 ngày làm việc kể từ ngày đặt đơn.
+                                Quý khách có thể liên hệ với Mieu qua Email, Điện thoại, Facebook để được biết về lộ
+                                trình đơn hàng của mình
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="related">
+            <div class="grid">
+                <div class="related-top">
+                    <p>
+                        Có thể bạn sẽ thích
+                    </p>
+                </div>
+                <div class="row related-content" id="myGopY">
+                    <!-- <div class="item" style="padding-left: 0;">
+                        <img src="resources/img/aosmT11.jpg" alt="">
+                        <h6>ANA DRESS</h6>
+                        <p>320.000<sup>đ</sup></p>
+                    </div> -->
+                    <!-- <div class="item">
+                        <img src="https://product.hstatic.net/200000202027/product/cv4_14094ca0dd974514881befabe498755b_grande.jpg"
+                            alt="">
+                        <h6>ARIA SKIRT</h6>
+                        <p>330.000<sup>đ</sup></p>
+                    </div>
+                    <div class="item">
+                        <img src="https://product.hstatic.net/200000202027/product/hodd_b070d6bcdfaf4b67b9f3f7edddf65276_grande.jpg"
+                            alt="">
+                        <h6>ANMI DRESS</h6>
+                        <p>280.000<sup>đ</sup></p>
+                    </div>
+                    <div class="item" style="padding-right: 0;">
+                        <img src="https://product.hstatic.net/200000202027/product/z3325856523438_20a2c50ca68cc7c579296a855942e5c4_a8e64d20e03f479ab220e2dfd4c69148_grande.jpg"
+                            alt="">
+                        <h6>BERNA DRESS</h6>
+                        <p>300.000<sup>đ</sup></p>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </section>
     <footer class="footer">
         <div class="grid">
             <div class="grid__row">
