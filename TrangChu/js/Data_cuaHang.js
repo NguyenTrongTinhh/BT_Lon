@@ -62,7 +62,7 @@ let sp6 = {
     masp: 6,
     tensp: "Áo thun đen",
     maLoai: 1,
-    hinhanh: "../img/aothunT6.jpg",
+    hinhanh: "../CuaHang/img/aothunT6.jpg",
     soluong: 80,
     dongia: 989000
 }
@@ -70,7 +70,7 @@ let sp7 = {
     masp: 7,
     tensp: "Áo thun Đính Nhãn",
     maLoai: 1,
-    hinhanh: "../img/aothunT7.jpg",
+    hinhanh: "../CuaHang/img/aothunT7.jpg",
     soluong: 12,
     dongia: 799000
 }
@@ -78,7 +78,7 @@ let sp8 = {
     masp: 8,
     tensp: "Áo thun cổ trụ xám đỏ",
     maLoai: 1,
-    hinhanh: "../img/aothunT8.jpg",
+    hinhanh: "../CuaHang/img/aothunT8.jpg",
     soluong: 53,
     dongia: 99000
 }
@@ -86,7 +86,7 @@ let sp9 = {
     masp: 9,
     tensp: "Áo thun Squad 21",
     maLoai: 1,
-    hinhanh: "../img/aothunT9.jpg",
+    hinhanh: "../CuaHang/img/aothunT9.jpg",
     soluong: 23,
     dongia: 1125000
 }
@@ -94,7 +94,7 @@ let sp10 = {
     masp: 10,
     tensp: "Áo thun cổ tròn đen",
     maLoai: 1,
-    hinhanh: "../img/aothunT10.jpg",
+    hinhanh: "../CuaHang/img/aothunT10.jpg",
     soluong: 6,
     dongia: 99000
 }
@@ -103,7 +103,7 @@ let sp11 = {
     masp: 11,
     tensp: "Áo sơ mi trắng",
     maLoai: 2,
-    hinhanh: "../img/aosmT11.jpg",
+    hinhanh: "../CuaHang/img/aosmT11.jpg",
     soluong: 6,
     dongia: 450000
 }
@@ -111,7 +111,7 @@ let sp12 = {
     masp: 12,
     tensp: "Áo sơ mi nam ngắn tay",
     maLoai: 2,
-    hinhanh: "../img/aosmT12.jpg",
+    hinhanh: "../CuaHang/img/aosmT12.jpg",
     soluong: 2,
     dongia: 599000
 }
@@ -119,7 +119,7 @@ let sp13 = {
     masp: 13,
     tensp: "Áo Sơ Mi Nam Tay Dài Aristino Trắng",
     maLoai: 2,
-    hinhanh: "../img/aosmT13.jpg",
+    hinhanh: "../CuaHang/img/aosmT13.jpg",
     soluong: 1,
     dongia: 416500
 }
@@ -127,7 +127,7 @@ let sp14 = {
     masp: 14,
     tensp: "Áo sơ mi nam tay lỡ",
     maLoai: 2,
-    hinhanh: "../img/aosmT14.jpg",
+    hinhanh: "../CuaHang/img/aosmT14.jpg",
     soluong: 2,
     dongia: 260000
 }
@@ -135,7 +135,7 @@ let sp15 = {
     masp: 15,
     tensp: "Áo Sơ Mi Nam WhiteonBlue",
     maLoai: 2,
-    hinhanh: "../img/aosmT15.jpg",
+    hinhanh: "../CuaHang/img/aosmT15.jpg",
     soluong: 5,
     dongia: 765000
 }
@@ -143,7 +143,7 @@ let sp16 = {
     masp: 16,
     tensp: "Áo sơ mi nam cổ trụ",
     maLoai: 2,
-    hinhanh: "../img/aosmT16.jpg",
+    hinhanh: "../CuaHang/img/aosmT16.jpg",
     soluong: 7,
     dongia: 309000
 }
@@ -151,7 +151,7 @@ let sp17 = {
     masp: 17,
     tensp: "Áo sơ mi nam dài tay",
     maLoai: 2,
-    hinhanh: "../img/aosmT17.jpg",
+    hinhanh: "../CuaHang/img/aosmT17.jpg",
     soluong: 100,
     dongia: 89000
 }
@@ -159,7 +159,7 @@ let sp18 = {
     masp: 18,
     tensp: "ÁO SƠ MI NAM",
     maLoai: 2,
-    hinhanh: "../img/aosmT18.jpg",
+    hinhanh: "../CuaHang/img/aosmT18.jpg",
     soluong: 3,
     dongia: 786000
 }
@@ -167,7 +167,7 @@ let sp19 = {
     masp: 19,
     tensp: "Áo sơ mi nam kẻ sọc xanh dương",
     maLoai: 2,
-    hinhanh: "../img/aosmT19.jpg",
+    hinhanh: "../CuaHang/img/aosmT19.jpg",
     soluong: 4,
     dongia: 285000
 }
@@ -175,7 +175,7 @@ let sp20 = {
     masp: 20,
     tensp: "Áo sơ mi Nam ngắn tay",
     maLoai: 2,
-    hinhanh: "../img/aosmT20.jpg",
+    hinhanh: "../CuaHang/img/aosmT20.jpg",
     soluong: 10,
     dongia: 199000
 }
@@ -184,7 +184,7 @@ let sp21 = {
     masp: 21,
     tensp: "Quần jogger",
     maLoai: 3,
-    hinhanh: "../img/quanT21.jpg",
+    hinhanh: "../CuaHang/img/quanT21.jpg",
     soluong: 10,
     dongia: 300000
 }
@@ -192,7 +192,7 @@ let sp22 = {
     masp: 22,
     tensp: "Quần kaki",
     maLoai: 3,
-    hinhanh: "../img/quanT22.jpg",
+    hinhanh: "../CuaHang/img/quanT22.jpg",
     soluong: 15,
     dongia: 450000
 }
@@ -200,7 +200,7 @@ let sp23 = {
     masp: 23,
     tensp: "Quần 3 sọc",
     maLoai: 3,
-    hinhanh: "../img/quanT23.jpg",
+    hinhanh: "../CuaHang/img/quanT23.jpg",
     soluong: 50,
     dongia: 100000
 }
@@ -208,7 +208,7 @@ let sp24 = {
     masp: 24,
     tensp: "Quần 3 sọc",
     maLoai: 3,
-    hinhanh: "../img/quanT24.jpg",
+    hinhanh: "../CuaHang/img/quanT24.jpg",
     soluong: 50,
     dongia: 110000
 }
@@ -216,7 +216,7 @@ let sp25 = {
     masp: 25,
     tensp: "Quần 3 sọc",
     maLoai: 3,
-    hinhanh: "../img/quanT25.jpg",
+    hinhanh: "../CuaHang/img/quanT25.jpg",
     soluong: 50,
     dongia: 120000
 }
@@ -224,7 +224,7 @@ let sp26 = {
     masp: 26,
     tensp: "Quần thể thao",
     maLoai: 3,
-    hinhanh: "../img/quanT26.jpg",
+    hinhanh: "../CuaHang/img/quanT26.jpg",
     soluong: 70,
     dongia: 280000
 }
@@ -232,7 +232,7 @@ let sp27 = {
     masp: 27,
     tensp: "Quần thể thao",
     maLoai: 3,
-    hinhanh: "../img/quanT27.jpg",
+    hinhanh: "../CuaHang/img/quanT27.jpg",
     soluong: 70,
     dongia: 300000
 }
@@ -240,7 +240,7 @@ let sp28 = {
     masp: 28,
     tensp: "Quần thể thao ngắn",
     maLoai: 3,
-    hinhanh: "../img/quanT28.jpg",
+    hinhanh: "../CuaHang/img/quanT28.jpg",
     soluong: 30,
     dongia: 280000
 }
@@ -248,7 +248,7 @@ let sp29 = {
     masp: 29,
     tensp: "Quần thể thao ngắn",
     maLoai: 3,
-    hinhanh: "../img/quanT29.jpg",
+    hinhanh: "../CuaHang/img/quanT29.jpg",
     soluong: 30,
     dongia: 280000
 }
@@ -256,7 +256,7 @@ let sp30 = {
     masp: 30,
     tensp: "Quần thể thao ngắn",
     maLoai: 3,
-    hinhanh: "../img/quanT30.jpg",
+    hinhanh: "../CuaHang/img/quanT30.jpg",
     soluong: 30,
     dongia: 200000
 }
@@ -265,7 +265,7 @@ let sp31 = {
     masp: 31,
     tensp: "Giày da Chelsea Boot",
     maLoai: 4,
-    hinhanh: "../img/giayT31.jpg",
+    hinhanh: "../CuaHang/img/giayT31.jpg",
     soluong: 10,
     dongia: 750000
 }
@@ -273,7 +273,7 @@ let sp32 = {
     masp: 32,
     tensp: "Giày BOSTON",
     maLoai: 4,
-    hinhanh: "../img/giayT32.jpg",
+    hinhanh: "../CuaHang/img/giayT32.jpg",
     soluong: 14,
     dongia: 150000
 }
@@ -281,7 +281,7 @@ let sp33 = {
     masp: 33,
     tensp: "Giày nam Versace",
     maLoai: 4,
-    hinhanh: "../img/giayT33.jpg",
+    hinhanh: "../CuaHang/img/giayT33.jpg",
     soluong: 20,
     dongia: 250000
 }
@@ -289,7 +289,7 @@ let sp34 = {
     masp: 34,
     tensp: "Giày sneaker nam",
     maLoai: 4,
-    hinhanh: "../img/giayT34.jpg",
+    hinhanh: "../CuaHang/img/giayT34.jpg",
     soluong: 40,
     dongia: 200000
 }
@@ -297,7 +297,7 @@ let sp35 = {
     masp: 35,
     tensp: "Giày Sneaker Sodoha",
     maLoai: 4,
-    hinhanh: "../img/giayT35.jpg",
+    hinhanh: "../CuaHang/img/giayT35.jpg",
     soluong: 32,
     dongia: 650000
 }
@@ -305,7 +305,7 @@ let sp36 = {
     masp: 36,
     tensp: "GiàySneaker cao cổ ",
     maLoai: 4,
-    hinhanh: "../img/giayT36.jpg",
+    hinhanh: "../CuaHang/img/giayT36.jpg",
     soluong: 11,
     dongia: 180000
 }
@@ -313,7 +313,7 @@ let sp37 = {
     masp: 37,
     tensp: "Giày Gucci Screener",
     maLoai: 4,
-    hinhanh: "../img/giayT37.jpg",
+    hinhanh: "../CuaHang/img/giayT37.jpg",
     soluong: 25,
     dongia: 350000
 }
@@ -321,7 +321,7 @@ let sp38 = {
     masp: 38,
     tensp: "Giày MLB Dodgers LA",
     maLoai: 4,
-    hinhanh: "../img/giayT38.jpg",
+    hinhanh: "../CuaHang/img/giayT38.jpg",
     soluong: 34,
     dongia: 430000
 }
@@ -329,7 +329,7 @@ let sp39 = {
     masp: 39,
     tensp: "Giày Vans",
     maLoai: 4,
-    hinhanh: "../img/giayT39.jpg",
+    hinhanh: "../CuaHang/img/giayT39.jpg",
     soluong: 16,
     dongia: 500000
 }
