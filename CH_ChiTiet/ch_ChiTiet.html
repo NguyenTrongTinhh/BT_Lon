@@ -6,118 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chi Tiết Sản Phẩm</title>
-    <link rel="stylesheet" href="../css/styleCT.css">
-    <link rel="stylesheet" href="../../fontawesome-free-6.0.0-web/css/all.css">
-    <link rel="stylesheet" href="../../bootstrap-4.6.1-dist/css/bootstrap.min.css">
-    <script src="../js/jquery-3.6.0.js"></script>
-    <script src="../../bootstrap-4.6.1-dist/js/bootstrap.min.js"></script>
-    <script>
-        let dssp = JSON.parse(localStorage.getItem("dssp"))
-        let masp = localStorage.getItem("masp");
-
-        let temp = dssp.find(sp => sp.masp == masp)
-
-        function hienThi(temp, dssp) {
-            img = "<div class='left-imgleft'>" +
-                "<img src='" + temp.hinhanh + "' alt='photo' class='border'> </div>" +
-                " <div class='left-imgright'>" +
-                "<img src='" + temp.hinhanh + "' alt='photo' class='border'>" +
-                "<img src='" + temp.hinhanh + "' alt='photo' class='border'>" +
-                "<img src='" + temp.hinhanh + "' alt='photo' class='border'>" +
-                "<img src='" + temp.hinhanh + "' alt='photo' class='border'></div>"
-            $("#myIMG").append(img);
-            $("#MyTen").append(temp.tensp)
-            $("#MyGia").append(dinhDangTienVN(temp.dongia) + " VNĐ")
-            $("#themVaoGH").append(" <button id='btnThem' onclick='chonsp(" + temp.masp + ")'>Thêm vào giỏ hàng<i class='fa-solid fa-cart-arrow-down'></i></button>")
-
-            let i = 0;
-            for (let len = 0; i < dssp.length; len++) {
-                if (dssp[len].maLoai == temp.maLoai && dssp[len].masp != temp.masp) {
-                    // alert(sp.maLoai)
-                    row = " <div class='item' style='padding-left: 0;'>" +
-                        "<a href='BH_ChiTiet.html'  onclick='setMaSP(" + dssp[len].masp + ")'><img src='" + dssp[len].hinhanh + "' alt='photo'    class='border'></a> " +
-                        "<h6>" + dssp[len].tensp + "</h6>" +
-                        "<p>" + dinhDangTienVN(dssp[len].dongia) + " VNĐ" + "<sup>đ</sup></p></div>"
-                    $("#myGopY").append(row);
-                    i++;
-                }
-                if (i == 4) {
-                    breakOut = true;
-                    return false;
-                }
-            }
-
-        }
-
-        function setMaSP(maSP) {
-            localStorage.setItem("masp", maSP);
-        }
-
-        function dinhDangTienVN(n) {
-            return "" + n.toFixed(0).replace(/./g, function (c, i, a) {
-                return i > 0 && c !== "." && (a.length - i) % 3 === 0 ? "," + c : c;
-            });
-        }
-
-        function chonsp(i) {
-            let kiemTraDN = localStorage.getItem("flag");
-            if(kiemTraDN.trim() == "false")  {
-                alert("Cần đăng nhập trước")
-                return;
-            }
-            let sL = $("#soLuong").val();
-            let dssp = JSON.parse(localStorage.getItem("dssp"))
-            let temp = dssp.find(sp => sp.masp == i)
-            let dsmasp = JSON.parse(localStorage.getItem("dsmasp"))
-
-            if (dsmasp == null) {
-                if (temp.soluong < parseInt(sL)) {
-                    alert("Chỉ còn " + temp.soluong)
-                    return;
-                }
-                let sp = { masp: i, soLuong: sL }
-                dsmasp = [sp]
-            } else {
-                let flag = false;
-                for (let index = 0; index < dsmasp.length; index++)
-                    if (dsmasp[index].masp == i) {
-                        let tong = parseInt(sL) + parseInt(dsmasp[index].soLuong)
-                        if (temp.soluong - parseInt(dsmasp[index].soLuong) == 0) {
-                            alert("Hết hàng")
-                            return;
-                        }
-                        if (temp.soluong < tong) {
-                            alert("Chỉ còn " + (temp.soluong - parseInt(dsmasp[index].soLuong)))
-                            return;
-                        }
-                        dsmasp[index].soLuong = tong;
-                        flag = true
-                    }
-
-                if (!flag) {
-                    let sp = { masp: i, soLuong: sL }
-                    dsmasp.push(sp)
-                }
-            }
-            localStorage.setItem("dsmasp", JSON.stringify(dsmasp));
-        }
-
-
-
-        window.onload = function () {
-            hienThi(temp, dssp)
-            let kiemTraDN = JSON.parse(localStorage.getItem("flag"));
-            if (kiemTraDN) {
-                document.querySelector("#khongDN").style.display = "none";
-                document.querySelector("#sauDN").style.display = "block";
-            }
-            $("#dangxuat").click(function(){
-                document.querySelector("#khongDN").style.display = "block";
-                document.querySelector("#sauDN").style.display = "none";
-                localStorage.setItem("flag",false)
-            })
-        }
-    </script>
+    <link rel="stylesheet" href="../CH_ChiTiet/styleChiTiet.css">
+    <link rel="stylesheet" href="../CH_ChiTiet/fontawesome-free-6.0.0-web/css/all.min.css">
+    <link rel="stylesheet" href="../CH_ChiTiet/bootstrap-4.6.1-dist/css/bootstrap.min.css">
+    <script src="../CH_ChiTiet/js/jquery-3.6.0.js"></script>
+    <script src="../CH_ChiTiet/bootstrap-4.6.1-dist/js/bootstrap.min.js"></script>
 </head>
 
 <body>
@@ -183,7 +76,7 @@
             </div>
         </div>
     </div>
-    
+ 
     <footer class="footer">
         <div class="grid">
             <div class="grid__row">
