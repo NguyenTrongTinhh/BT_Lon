@@ -22,7 +22,7 @@ let sp1 = {
     masp: 1,
     tensp: "Áo thun Crew",
     maLoai: 1,
-    hinhanh: "../img/aoT1.jpg",
+    hinhanh: "../CuaHang/img/aoT1.jpg",
     soluong: 10,
     dongia: 120000
 }
@@ -30,7 +30,7 @@ let sp2 = {
     masp: 2,
     tensp: "Áo thun Marvel",
     maLoai: 1,
-    hinhanh: "../img/aoT2.jpg",
+    hinhanh: "../CuaHang/img/aoT2.jpg",
     soluong: 15,
     dongia: 150000
 }
@@ -38,7 +38,7 @@ let sp3 = {
     masp: 3,
     tensp: "Áo thun trắng",
     maLoai: 1,
-    hinhanh: "../img/aoT3.jpg",
+    hinhanh: "../CuaHang/img/aoT3.jpg",
     soluong: 20,
     dongia: 175000
 }
@@ -46,7 +46,7 @@ let sp4 = {
     masp: 4,
     tensp: "Áo thun tay lỡ mặt nạ",
     maLoai: 1,
-    hinhanh: "../img/aoT4.jpg",
+    hinhanh: "../CuaHang/img/aoT4.jpg",
     soluong: 30,
     dongia: 155000
 }
@@ -54,7 +54,7 @@ let sp5 = {
     masp: 5,
     tensp: "Áo thun Mỹ",
     maLoai: 1,
-    hinhanh: "../img/aoT5.jpg",
+    hinhanh: "../CuaHang/img/aoT5.jpg",
     soluong: 25,
     dongia: 185000
 }
@@ -337,7 +337,7 @@ let sp40 = {
     masp: 40,
     tensp: "Giày Nike Air",
     maLoai: 4,
-    hinhanh: "../img/giayT40.jpg",
+    hinhanh: "../CuaHang/img/giayT40.jpg",
     soluong: 37,
     dongia: 550000
 }

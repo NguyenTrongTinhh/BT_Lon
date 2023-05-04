@@ -12,8 +12,123 @@
     <link rel="stylesheet" href="../TrangChu/bootstrap-4.6.1-dist/css/bootstrap.min.css">
     <script src="../CuaHang/js/jquery-3.6.0.js"></script>
     <script src="../CuaHang/bootstrap-4.6.1-dist/js/bootstrap.min.js"></script>
+    <script>
+        let dssp = JSON.parse(localStorage.getItem("dssp"));
+        let dsLoaiSP = JSON.parse(localStorage.getItem("dsLoaiSP"));
+        let maL = JSON.parse(localStorage.getItem("maLoai"));
 
-    
+        function napAllLoaiSP(dsLoaiSP) {
+            dsLoaiSP.forEach(loai => {
+                let row = "<li><a href='BH_BH.html' class='border' onclick='setMaLoaiSP(" + loai.maLoai + ")'>" + loai.tenLoai + "</a></li>"
+                $("#danhMucSP").append(row);
+            })
+
+        }
+
+        function napAllDSSP(dssp, chon) {
+            let j = Math.abs(chon * 12);
+            for (var i = (chon - 1) * 12; i < j; i++) {
+                let row = "<div class='sanPham'> " +
+                    "<a href='BH_ChiTiet.html'  onclick='setMaSP(" + dssp[i].masp + ")'> <img src='" + dssp[i].hinhanh + "' alt='photo' class='border' ></a> " +
+                    "<p>" + dssp[i].tensp + "</p>" +
+                    "<p>" + dssp[i].dongia + "đ</p>" +
+                    "</div> </div> "
+                // document.getElementById("dsBanHang").innerHTML += row;
+                $("#dsBanHang").append(row);
+            }
+        }
+
+        function setMaSP(maSP) {
+            localStorage.setItem("masp", maSP);
+        }
+
+
+        function hienThi(maLoai) {
+            document.getElementById("dsBanHang").innerHTML = "";
+
+            dssp.forEach(sp => {
+                if (maLoai == sp.maLoai) {
+                    let row = "<div class='sanPham'> " +
+                        "<a href='BH_ChiTiet.html'  onclick='setMaSP(" + sp.masp + ")'> <img src='" + sp.hinhanh + "' alt='photo' class='border' ></a> " +
+                        "<p>" + sp.tensp + "</p>" +
+                        "<p>" + sp.dongia + "đ</p>" +
+                        "</div> </div> "
+                    // document.getElementById("dsBanHang").innerHTML += row;
+                    $("#dsBanHang").append(row);
+                }
+            })
+            tenLoai = "";
+            dsLoaiSP.forEach(sp => {
+                if (maLoai == sp.maLoai) {
+                    tenLoai = sp.tenLoai;
+                }
+            })
+            let s = "<p>/ " + tenLoai + "</p>"
+            $("#tieuDe").append(s);
+        }
+
+        function setMaLoaiSP(maLoai) {
+            localStorage.setItem("maLoai", maLoai)
+
+        }
+
+        function napSoTrang(chon) {
+            let soTrang
+            if (chon == 0)
+                soTrang = 1
+            else
+                soTrang = Math.ceil(dssp.length / 12);
+
+            $("#soTrang").append("<li onclick='chon(" + 1 + ")'><a href='#'><i class='fa fa-angle-left'></i></a></li>");
+            for (let i = 1; i <= soTrang; i++) {
+                let s = "";
+                if (i == chon) {
+                    s = "class='active'";
+                }
+                let temp = "<li " + s + " value='" + i + "' onclick='chon(" + i + ")'><a href='#' >" + i + "</a></li>"
+                $("#soTrang").append(temp);
+            }
+            $("#soTrang").append("<li onclick='chon(" + soTrang + ")'><a href='#'><i class='fa fa-angle-right'></i></a></li>");
+        }
+
+        function chon(i) {
+            $("#dsBanHang").html("");
+            $("#soTrang").html("");
+            napSoTrang(i);
+            napAllDSSP(dssp, i);  //nạp dữ liệu vào danh sách tin tức
+
+        }
+
+
+        window.onload = function () {
+            let kiemTraDN = JSON.parse(localStorage.getItem("flag"));
+            if (kiemTraDN) {
+                document.querySelector("#khongDN").style.display = "none";
+                document.querySelector("#sauDN").style.display = "block";
+            }
+
+            napAllLoaiSP(dsLoaiSP)
+            if (maL != null) {
+                hienThi(maL);
+                localStorage.removeItem("maLoai");
+                napSoTrang(0)
+            } else {
+                napAllDSSP(dssp, 1);
+                napSoTrang(1)
+            }
+
+            let kiemTra = JSON.parse(localStorage.getItem("flag"));
+            if (kiemTra) {
+                document.querySelector("#khongDN").style.display = "none";
+                document.querySelector("#sauDN").style.display = "block";
+            }
+            $("#dangxuat").click(function(){
+                document.querySelector("#khongDN").style.display = "block";
+                document.querySelector("#sauDN").style.display = "none";
+                localStorage.setItem("flag",false)
+            })
+        }
+    </script>
 </head>
 
 <body>
@@ -92,28 +207,28 @@
         <article class="art1 mt-2">
             <h5>Danh mục sản phẩm</h5>
             <ul class="mr-5 pl-0" id="danhMucSP" onclick="danhMucSP()">
-                <li><a href="#" class="border" onclick="hienThi(aosomi)">Áo sơ mi</a></li>
+                <!-- <li><a href="#" class="border" onclick="hienThi(aosomi)">Áo sơ mi</a></li>
                 <li><a href="#" class="border">Áo thun</a></li>
                 <li><a href="#" class="border">Quần</a></li>
-                <li><a href="#" class="border">Giày</a></li>
+                <li><a href="#" class="border">Giày</a></li> -->
             </ul>
         </article>
         <article class="art2 mt-2 ml-5">
             <div class="row" id="dsBanHang">
-                <div class="sanPham">
+                <!-- <div class="sanPham">
                     <a href="#"><img src="https://tse2.mm.bing.net/th?id=OIP.q-8GNYrQUW1yLQlZb7-zLwHaHa&pid=Api&P=0" alt="" class="border"></a>
                     <p>Áo thun đen</p>
                     <p>250,000đ</p>
-                </div>
-                
+                </div> -->
+            </div>    
                 <div class="row">
                     <div class="pagination-nav text-center mtb_20">
                         <ul id="soTrang">
-                            <li><a href="#"><i class="fa fa-angle-left"></i></a></li>
+                            <!-- <li><a href="#"><i class="fa fa-angle-left"></i></a></li>
                             <li class="active"><a href="#">1</a></li>
                             <li><a href="#">2</a></li>
                             <li><a href="#">3</a></li>
-                            <li><a href="#"><i class="fa fa-angle-right"></i></a></li>
+                            <li><a href="#"><i class="fa fa-angle-right"></i></a></li> -->
                         </ul>
                     </div>
             </div>
