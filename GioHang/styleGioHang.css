@@ -344,21 +344,6 @@ a{
     transition-delay: 0s;
 }
 /* kết thúc hover menu*/
-.menu>li>a,
-.menu-right>li>a{
-    color: #333;
-}
-.menu-right{
-    flex: 1.9;
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-}
-
-/* .menu-right li{
-    position: relative;
-} */
-
 
 /* đường dẫn */
 .duongDan{
