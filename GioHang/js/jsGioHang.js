@@ -57,6 +57,75 @@ function xoaSP(maSP) {
     }
 
 }
+window.onload = function () {
+    napGioHang();
+        let kiemTraDN = JSON.parse(localStorage.getItem("flag"));
+        if (kiemTraDN) {
+            document.querySelector("#khongDN").style.display = "none";
+            document.querySelector("#sauDN").style.display = "block";
+        }
+
+        $("#dangxuat").click(function(){
+            document.querySelector("#khongDN").style.display = "block";
+            document.querySelector("#sauDN").style.display = "none";
+            localStorage.setItem("flag",false)
+        })
+}
+
+function chonAll() {
+    // Lấy danh sách checkbox
+    var chonSP = document.getElementsByName('chonSP');
+
+    // Lặp và thiết lập checked chọn all sản phẩm
+    if (document.getElementById("chonAll").checked == true) {
+        for (var i = 0; i < chonSP.length; i++) {
+            chonSP[i].checked = true;
+        }
+    }
+    else {
+        for (var i = 0; i < chonSP.length; i++) {
+            chonSP[i].checked = false;
+        }
+    }
+}
+window.onclick = function () {
+
+    var kiemTra = 0;
+    var tongTien = 0;
+    var chonSP = document.getElementsByName('chonSP');
+    let soLuong = chonSP.length;
+    var soLuongSP = document.getElementsByName('soLuongSP')
+    var giaSP = document.getElementsByName('giaSP')
+    var thanhTien = document.getElementsByName('thanhTienSP')
+
+    // Lặp và thiết lập checked chọn sản phẩm
+    for (var i = 0; i < soLuong; i++) {
+        let thanhTienSP = soLuongSP[i].value * giaSP[i].innerText.replace(/[^0-9]/g, '');
+        thanhTien[i].innerHTML = dinhDangTienVN(Number(thanhTienSP))
+        if (chonSP[i].checked == true) {
+            kiemTra++;
+            tongTien = Number(thanhTien[i].innerHTML.replace(/[^0-9]/g, '')) + tongTien;
+        }
+    }
+    if (kiemTra != soLuong) {
+        document.getElementById("chonAll").checked = false;
+    }
+    if (kiemTra == soLuong) {
+        document.getElementById("chonAll").checked = true;
+    }
+
+    let tien = dinhDangTienVN(tongTien);
+    document.getElementById('tongTienSP').innerHTML = tien
+
+    let phiBaoHiem = Number(tongTien) * 0.01;
+    document.getElementById('phiBaoHiem').innerHTML = dinhDangTienVN(phiBaoHiem)
+
+    let tongThanhTien = (tongTien + phiBaoHiem);
+    tongThanhTien = tongThanhTien * (100 - Number(document.getElementById('txtGiamGia').value.replace(/[^0-9]/g, ''))) / 100;
+    document.getElementById('tongThanhTien').innerHTML = dinhDangTienVN(tongThanhTien) + '&#8363;';
+
+}
+
 
 // link tham khảo:https://anonystick.com/blog-developer/tips-dinh-dang-tien-te-trong-javascript-2020042435532588
 
