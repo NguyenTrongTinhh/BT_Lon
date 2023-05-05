@@ -1,0 +1,431 @@
+body {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+#sauDN{
+    display: none;
+}
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Trang tham khảo body:https://viblo.asia/p/14-css-tao-hieu-ung-cho-background-tuyet-dep-LzD5djaeZjY */
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+* li {
+    list-style: none;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+
+}
+
+#ndThanGH tbody tr td:last-child {
+    color: rgb(238, 77, 45);
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.image img {
+    width: 108px;
+    height: 150px;
+}
+
+.tieuDe {
+    text-align: right;
+    line-height: 14px;
+    margin: 27px 0;
+}
+
+.tieuDe-timKiem {
+    display: inline-block;
+    line-height: 14px;
+    list-style: outside none none;
+}
+
+.tieuDeBangGH {
+    background: #d8d6d6;
+}
+
+.bang>td {
+    padding: 10px;
+    font-weight: bold;
+}
+
+.bang {
+    border: 1px solid #d8ca08e6;
+}
+
+.tenSP a {
+    font-size: 14px;
+    text-transform: capitalize;
+}
+
+.thanhGioHang {
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid #eaeaea;
+    padding: 0 25px 0;
+    margin-bottom: 5px;
+}
+
+.tieuDeGioHang h4 {
+    font-size: 17px;
+    font-weight: bold;
+    color: #000;
+    margin: 15px 0;
+}
+
+.thanGioHang {
+    margin: 0 0 25px;
+}
+
+.giamGia .btn {
+    padding: 15px 10px;
+    width: 100%;
+}
+
+.btn {
+    padding: 10px 15px;
+    line-height: 10px;
+    border-radius: 0;
+}
+
+.noiDungGioHang {
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid #eaeaea;
+    padding: 20px;
+}
+
+.thanhToan .btn {
+    padding: 15px 0;
+    width: 100%;
+    background-color: #000;
+    color: white;
+    border: 1.5px solid red;
+}
+
+#ndThanGH td {
+    padding: 14px 0;
+}
+
+#txtGiamGia {
+    padding: 10px;
+    margin: 0 0 10px;
+    width: 100%;
+}
+
+#tiepTucMuahang {
+    margin: 50px 0 80px;
+    padding: 15px 25px;
+    background-color: #dc4a38;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 20px;
+    transition: color 0.5s, background-color 0.5s;
+    text-decoration: none;
+}
+
+#tiepTucMuahang:hover {
+    background-color: white;
+    color: #dc4a38;
+
+}
+
+th,
+.bang {
+    text-align: center;
+}
+
+.bang .chonSP {
+    margin: auto;
+    display: block;
+
+}
+
+.form-group-soLuong button {
+    display: inline-block;
+    width: 25%;
+    height: 100%;
+    border: none;
+    background-color: #000;
+    font-family: "Montserrat", sans-serif;
+    color: #fff;
+    font-size: 20px;
+    transition: all 0.4s ease;
+}
+
+.form-group-soLuong .tru-SL {
+    float: left;
+}
+
+.form-group-soLuong .form-control {
+    position: relative;
+    top: -2px;
+    margin-right: -4px;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border-radius: 0;
+}
+
+.form-group-soLuong button:hover {
+    background-color: #50CF96;
+}
+
+/* https://www.w3schools.com/bootstrap/tryit.asp?filename=trybs_ref_glyph_trash&stacked=h */
+
+/* header */
+
+.grid{
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+    height: 100%;
+}
+.grid__row{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.grid__column-2-4{
+    width: 20%;
+}
+
+header{
+    position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        height: 85px;
+        width: 100%;
+    background-color: wheat;
+}
+
+
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;
+    
+}
+.logo{
+    flex: 0.5;
+}
+.menu{
+    flex: 3;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* tạo hover menu*/
+.menu {
+    font-family: 'Roboto', Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    }
+.menu li {
+            list-style: outside none none;
+            overflow: hidden;
+            position: relative;
+            border-radius: 3px;
+}
+
+.menu li:before,
+.menu li:after {
+            display: block;
+}
+
+.menu li:before {
+            bottom: 0%;
+}
+
+.menu li:after {
+            bottom: 50%;
+}
+.menu a {
+    backface-visibility: hidden;
+    display: block;
+    padding: 0.5em 1em;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+}
+.menu a:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
+.menu a:before {
+    bottom: 25%;
+}
+.menu a:after {
+    bottom: 75%;
+}
+.menu li:before,
+.menu li:after,
+.menu a:before,
+.menu a:after {
+    background-color: #3dabf5bb;
+    position: absolute;
+    height: 25%;
+    left: 50%;
+    right: 50%;
+    content: '';
+    z-index: -1;
+    opacity: 0;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.menu li:before {
+    -webkit-transition-delay: 0.15s;
+    transition-delay: 0.15s;
+    }
+.menu li:after {
+    -webkit-transition-delay: 0.05s;
+    transition-delay: 0.05s;
+}
+.menu a:before {
+    -webkit-transition-delay: 0.1s;
+    transition-delay: 0.1s;
+}
+.menu a:after {
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+}
+.menu li:hover:before,
+.menu li:hover:after,
+.menu li:hover a:before,
+.menu li:hover a:after {
+    left: 0;
+    right: 0;
+    opacity: 1;
+}
+.menu li:hover:before {
+    -webkit-transition-delay: 0.3s;
+    transition-delay: 0.3s;
+    }
+.menu li:hover:after{
+    -webkit-transition-delay: 0.1s;
+     transition-delay: 0.1s;
+    }
+.menu li:hover a:before {
+    -webkit-transition-delay: 0.2s;
+     transition-delay: 0.2s;
+}
+
+.menu li:hover a:after {
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+}
+/* kết thúc hover menu*/
+.menu>li>a,
+.menu-right>li>a{
+    color: #333;
+}
+.menu-right{
+    flex: 1.9;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+/* .menu-right li{
+    position: relative;
+} */
+
+
+/* đường dẫn */
+.duongDan{
+    margin-top: 85px;
+    height: 180px;
+    background-image: url(../GioHang/img/DuongDan.jpg);
+    background-position-x: 0%;
+    background-position-y: 50%;
+}
+.duongDan .duongDan-content{
+    height: 140px;
+    padding: 39px 15px 20px;
+}
+.duongDan .title h1, .duongDan .content p, .duongDan .content a {
+  text-align: center;
+    color: #ffffff  ;
+}
+.duongDan .content{
+    display: flex;
+    justify-content: center
+}
+.duongDan .content a:hover{
+    text-decoration: none;
+}
+/*footer*/
+.footer{
+    border-top: 5px solid #A0A0A0;
+    background-color: #2F4F4F;
+    margin: 30px auto 0;
+  }
+  .footer__heading,.footer p{
+      color: #D8D8D8;
+      font-size: 1rem;
+      text-transform: uppercase;
+      
+  }
+  .footer-list{
+      padding-left: 0px;
+      list-style: none;
+      
+  }
+  .footer-item__link{
+      text-decoration: none;
+      color: #D8D8D8;
+    
+  }
+  .footer-item__link:hover{
+      color: rgba(255,255,255,1.5);
+      cursor: pointer;
+      text-decoration: none;
+  }
+  .footer-list--menu{
+      display: grid;
+      grid-template-columns: repeat(2,50%);
+  }
+  .footer-list--MangXH{
+      display: grid;
+      grid-template-columns: repeat(2,50%);
+  }
+     
+  .footer1{
+      align-items: center;
+      background-color: #003300;
+      display: flex;
+      justify-content: space-around;
+  }
+  .footer1 p{ 
+      margin: 0;
+      color: #909090;
+  }
