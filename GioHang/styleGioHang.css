@@ -344,7 +344,72 @@ a{
     transition-delay: 0s;
 }
 /* kết thúc hover menu*/
+.menu>li>a,
+.menu-right>li>a{
+    color: #333;
+}
+.menu-right{
+    flex: 1.9;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
 
+/* .menu-right li{
+    position: relative;
+} */
+
+.menu-right li>ul a{
+   display: block;
+   background-color: #333;
+   margin-top: 1px;
+}
+.menu-right a:hover{
+    text-decoration: none;
+}
+.menu-right li>ul li:first-child >a{
+    border-radius: 0px 15px 0 0;
+}
+
+.menu-right li>ul li:last-child >a{
+    border-radius:  0 0 15px 15px;
+}
+
+
+.menu-right li>ul{
+    position: absolute;
+    display: none;
+    left: 223px;
+    width: 200px;
+}
+
+.menu-right li:hover ul{
+    display: block;
+}
+
+ .menu-right .DKDN>a:hover{
+     text-decoration: none;
+ }
+.menu-right>li>a{
+    font-size: 19px;
+}
+.menu-right >li:first-child{
+    
+    position: relative;
+}
+.menu-right >li>input{
+    width: 80%;
+    float: right;
+    border: none;               
+    border-bottom:1px solid #333;
+    background-color: transparent;
+    outline: none;
+}
+.menu-right >li:first-child i{
+    position: absolute;
+    right: 1px;
+    top: 6px;
+}
 /* đường dẫn */
 .duongDan{
     margin-top: 85px;
