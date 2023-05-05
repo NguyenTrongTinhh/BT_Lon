@@ -18,7 +18,7 @@ function napGioHang() {
                     + "    </td>"
                     + "    <td>"
                     + "      <div class='tenSP'>"
-                    + "       <h4><a href='BH_ChiTiet.html' onclick='setMaSP(" + spGioHang.masp + ")'>" + sp.tensp + "</a></h4>"
+                    + "       <h4><a href='../CH_ChiTiet/ch_ChiTiet.html' onclick='setMaSP(" + spGioHang.masp + ")'>" + sp.tensp + "</a></h4>"
                     + "    </div>"
                     + "       <div class='price'><span>" + dinhDangTienVN(sp.dongia) + " VNĐ" + "</span></div>"
                     + "       </td>"
