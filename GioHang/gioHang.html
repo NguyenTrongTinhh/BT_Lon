@@ -22,7 +22,8 @@
         <div class="grid">
             <div class="header">
                 <div class="logo">
-                    <a href="../TrangChu/trangChu.html"><img src="../GioHang/img/logo.jpg" width="80%" height="86px" alt=""></a>
+                    <a href="../TrangChu/trangChu.html"><img src="../GioHang/img/logo.jpg" width="80%" height="86px"
+                            alt=""></a>
                 </div>
                 <div class="menu">
                     <li><a href="../TrangChu/trangChu.html">Trang chủ</a></li>
@@ -58,8 +59,8 @@
                         <ul class="nav">
                             <li class="nav-item"><a href="#" class="nav-link">Thông tin tài khoản</a></li>
                             <li class="nav-item"><a href="#" class="nav-link">Thay đổi mật khẩu</a></li>
-                            <li class="nav-item" ><a href="#" class="nav-link" id="dangxuat">Đăng xuất</a></li>
-                            
+                            <li class="nav-item"><a href="#" class="nav-link" id="dangxuat">Đăng xuất</a></li>
+
                         </ul>
                     </li>
                     <li><a href="../GioHang/gioHang.html"><i class="fa-solid fa-cart-arrow-down"></i>Giỏ hàng </a></li>
@@ -67,7 +68,7 @@
             </div>
         </div>
     </header>
-    
+
     <div class="duongDan">
         <div class="duongDan-content">
             <div class="title">
@@ -80,7 +81,7 @@
         </div>
     </div>
     <!-- Header-->
-    
+
     <!-- -->
     <section style="margin-top:35px ;">
         <div class="container">
@@ -101,7 +102,37 @@
                                 </tr>
                             </thead>
                             <tbody id="tblGioHang">
-                               
+                                <tr class="bang">
+                                    <td>
+                                        <input type="checkbox" class="chonSP" id="chon1">
+                                    </   td>
+                                    <td>
+                                        <div class="image"><a href="product-details.html"><img alt="img"
+                                                    src="imgGioHang/sanPham1.jpg"></a></div>
+                                    </td>
+                                    <td>
+                                        <div class="tenSP">
+                                            <h4><a href="product-detail-view.html">Sản phẩm 1
+                                                </a></h4>
+                                        </div>
+                                        <div class="price"><span>700.000 VNĐ</span></div>
+                                    </td>
+                                    <td class="product-quantity">
+                                        <div class="form-group-soLuong">
+                                            <input class="form-control" onchange="tinhToan()" type="number" id="soLuong"
+                                                min="0" value="2">
+                                        </div>
+                                    </td>
+
+                                    <td class="price" id="gia">700</td>
+                                    <td class="delete"><a title="Delete">
+                                            <a href="#" class="btn btn-info ">
+                                                <span class="glyphicon glyphicon-trash"></span> Xóa
+                                            </a>
+                                        </a>
+                                    </td>
+                                    <td id="thanhTien">???</td>
+                                </tr>
                             </tbody>
                         </table>
                     </div>
@@ -165,7 +196,7 @@
             </div>
         </div>
     </section>
-   
+
 
     <!-- Footer-->
     <footer class="footer" style="margin-top: 50px;">
@@ -214,7 +245,8 @@
                     <h3 class="footer__heading">Địa chỉ</h3>
                     <ul class="footer-list">
                         <li class="footer-item">
-                            <a href="#" class="footer-item__link"><i class="fa-solid fa-location-dot"></i> 12 Nguyễn Văn Bảo, Phường 4, Gò Vấp, Thành phố Hồ Chí Minh, Việt Nam</a>
+                            <a href="#" class="footer-item__link"><i class="fa-solid fa-location-dot"></i> 12 Nguyễn Văn
+                                Bảo, Phường 4, Gò Vấp, Thành phố Hồ Chí Minh, Việt Nam</a>
                         </li>
                         <li class="footer-item">
                             <a href="#" class="footer-item__link"><i class="fa-solid fa-phone"></i> 0123456789</a>
