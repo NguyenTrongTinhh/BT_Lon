@@ -250,3 +250,160 @@ a{
 .duongDan .content a:hover{
     text-decoration: none;
 }
+.footer{
+    border-top: 5px solid #A0A0A0;
+    background-color: #2F4F4F;
+  }
+  .footer__heading,.footer p{
+      color: #D8D8D8;
+      font-size: 1rem;
+      text-transform: uppercase;
+      
+  }
+  .footer-list{
+      padding-left: 0px;
+      list-style: none;
+      
+  }
+  .footer-item__link{
+      text-decoration: none;
+      color: #D8D8D8;
+    
+  }
+  .footer-item__link:hover{
+      color: rgba(255,255,255,1.5);
+      cursor: pointer;
+      text-decoration: none;
+  }
+  .footer-list--menu{
+      display: grid;
+      grid-template-columns: repeat(2,50%);
+  }
+  .footer-list--MangXH{
+      display: grid;
+      grid-template-columns: repeat(2,50%);
+  }
+     
+  .footer1{
+      align-items: center;
+      background-color: #003300;
+      display: flex;
+      justify-content: space-around;
+  }
+  .footer1 p{ 
+      margin: 0;
+      color: #909090;
+  }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0 0 10px;
+}
+
+h1 {
+	margin-bottom: 15px;
+}
+
+li {
+	display: list-item;
+	text-align: -webkit-match-parent;
+}
+
+
+a {
+	color: #E02222;
+}
+
+a,
+a:focus,
+a:hover,
+a:active {
+	outline: 0;
+	text-decoration: none;
+}
+
+ul {
+	display: block;
+	list-style-type: disc;
+	margin-block-start: 1em;
+	margin-block-end: 1em;
+	margin-inline-start: 0px;
+	margin-inline-end: 0px;
+	padding-inline-start: 40px;
+}
+
+.margin-bottom-40 {
+	margin-bottom: 40px !important;
+}
+
+.breadcrumb {
+	/* tiêu đề */
+	background: none;
+	padding: 0;
+	color: #5f6d7b;
+	margin-bottom: 22px;
+	
+}
+
+.panel-heading a {
+	color: inherit;
+}
+
+.footer-Cam {
+	color: #fff;
+	padding: 30px 0;
+	background: #e84d1c;
+}
+
+.footer-Cam-khoi {
+	overflow: hidden;
+	min-height: 71px;
+}
+
+.footer-Cam-khoi span {
+	display: block;
+	width: 36px;
+	height: 71px;
+	position: absolute;
+	top: 0;
+	right:0;
+}
+
+.footer-Cam h2 {
+	color: #fff;
+	font-size: 43px;
+	margin: 0;
+	padding: 0;
+	line-height: 1;
+}
+
+.footer-Cam .free-Shipping,
+.footer-Cam .tri-An-KH,
+.footer-Cam .lien-he-KH {
+	font-size: 30px;
+	border: solid 2px #fff;
+	border-radius: 30px !important;
+	width: 60px;
+	height: 60px;
+	text-align: center;
+	vertical-align: middle;
+	padding-top: 13px;
+	margin-right: 11px;
+	float: left;
+}
+
+.footer-Thanh-Toan {
+	background: #272626;
+	color: #01f701;
+	font-size: 13px;
+	padding: 15px 0;
+}
+
+.footer-Thanh-Toan ul {
+	margin: 0;
+	padding: 0;
+}
+
