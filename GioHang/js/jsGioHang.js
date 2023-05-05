@@ -45,4 +45,30 @@ function napGioHang() {
 function setMaSP(maSP) {
     localStorage.setItem("masp", maSP);
 }
+function xoaSP(maSP) {
+    if (confirm("Bạn có chắc chắn muốn xóa sản phẩm này không?")) {
+        dsGioHang.forEach(sp => {
+            if (sp.masp == maSP) {
+                dsGioHang.splice(dsGioHang.indexOf(sp), 1);
+            }
+        })
+        localStorage.setItem("dsmasp", JSON.stringify(dsGioHang));
+        window.location.reload();
+    }
 
+}
+
+// link tham khảo:https://anonystick.com/blog-developer/tips-dinh-dang-tien-te-trong-javascript-2020042435532588
+
+// sự kiện rê chuột header đổi màu
+const header = document.querySelector("header")
+window.addEventListener("scroll", function () {
+    x = window.pageYOffset
+    if (x > 0) {
+        header.classList.add("sticky")
+    }
+    else {
+        header.classList.remove("sticky")
+    }
+
+})
