@@ -18,7 +18,7 @@ function napGioHang() {
                     + "    </td>"
                     + "    <td>"
                     + "      <div class='tenSP'>"
-                    + "       <h4><a href='../CH_ChiTiet/ch_ChiTiet.html' onclick='setMaSP(" + spGioHang.masp + ")'>" + sp.tensp + "</a></h4>"
+                    + "       <h4><a href='BH_ChiTiet.html' onclick='setMaSP(" + spGioHang.masp + ")'>" + sp.tensp + "</a></h4>"
                     + "    </div>"
                     + "       <div class='price'><span>" + dinhDangTienVN(sp.dongia) + " VNĐ" + "</span></div>"
                     + "       </td>"
@@ -126,7 +126,110 @@ window.onclick = function () {
 
 }
 
+document.getElementById('btnGiamGia').onclick = function () {
+    let giamGia = Number(document.getElementById("txtGiamGia").value);
+    if (!(/^[0-9]*$/).test(giamGia)) {
+        alert("Vui lòng nhập số");
+        return;
+    }
+    if (giamGia == "") {
+        alert("Bạn đã chưa nhập mã");
+        return;
+    }
+    if (!(giamGia > 100 || giamGia < 0)) {
+        document.getElementById('giamGiaGH').innerHTML = giamGia + "%";
+        return true;
+    }
+    else {
+        document.getElementById('giamGiaGH').innerHTML = "0%";
+        alert("Bạn đã nhập sai giảm giá");
+        return false;
+    }
+}
 
+document.getElementById('btnThanhToan').onclick = function () {
+
+    //kiểm tra ds gio hang
+    if (dsGioHang.length == 0) {
+        alert("Giỏ hàng trống");
+        return false;
+    }
+    //kiểm tra chọn sản phẩm
+
+    var chonSP = document.getElementsByName('chonSP');
+    var kiemTra = 0;
+    for (var i = 0; i < chonSP.length; i++) {
+        if (chonSP[i].checked == true) {
+            kiemTra++;
+        }
+    }
+    if (kiemTra == 0) {
+        alert("Vui lòng chọn sản phẩm");
+        return false;
+    }
+
+    let dataThanhToan = JSON.parse(localStorage.getItem("dataThanhToan"));
+    if (dataThanhToan == null) {
+        dataThanhToan = [];
+    }
+    let tongTienSP = document.getElementById('tongTienSP').innerHTML.replace(/[^0-9]/g, '');
+    let phiBaoHiem = document.getElementById('phiBaoHiem').innerHTML.replace(/[^0-9]/g, '');
+    let tongThanhTien = document.getElementById('tongThanhTien').innerHTML.replace(/[^0-9]/g, '');
+    let giamGia = document.getElementById('giamGiaGH').innerHTML.replace(/[^0-9]/g, '');
+    let ngayLap = (new Date().toLocaleDateString())
+
+    var soLuongSP = document.getElementsByName('soLuongSP')
+    var chonSP = document.getElementsByName('chonSP');
+    var dsMua = [];
+    // alert(chonSP[0].value);
+
+    for (var i = 0; i < chonSP.length; i++) {
+        if (chonSP[i].checked == true) {
+            let temp = { masp: chonSP[i].value, soluong: soLuongSP[i].value }
+            dsMua.push(temp);
+            // alert(dsMua + " " + dsMua[0].soluong +"1111");
+        }
+
+    }
+
+    dataThanhToan = {
+        "maSP": dsMua,
+        "tongTienSP": tongTienSP,
+        "phiBaoHiem": phiBaoHiem,
+        "giamGia": giamGia,
+        "ngayLap": ngayLap,
+        "tongThanhTien": tongThanhTien
+
+    }
+
+    localStorage.setItem("dataThanhToan", JSON.stringify(dataThanhToan));
+    // window.location.href = "./thanhtoan.html";
+
+    //Lấy thông tin đơn hàng
+    var dsMua = JSON.parse(localStorage.getItem("dsmasp"));
+    //xóa sản phẩm ko chọn
+    var chonSP = document.getElementsByName('chonSP');
+
+    dsMua.forEach(sp => {
+        // if (sp.masp == maSP) {
+        //     dsGioHang.splice(dsGioHang.indexOf(sp), 1);
+        // }
+        for (var i = 0; i < chonSP.length; i++) {
+            if (chonSP[i].checked == true) {
+                kiemTra++;
+            }
+        }
+        sp.soLuong = 0;
+    })
+
+    return true;
+}
+
+function dinhDangTienVN(n) {
+    return "" + n.toFixed(0).replace(/./g, function (c, i, a) {
+        return i > 0 && c !== "." && (a.length - i) % 3 === 0 ? "," + c : c;
+    });
+}
 // link tham khảo:https://anonystick.com/blog-developer/tips-dinh-dang-tien-te-trong-javascript-2020042435532588
 
 // sự kiện rê chuột header đổi màu
