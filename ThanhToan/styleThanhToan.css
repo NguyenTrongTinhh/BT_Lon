@@ -1,0 +1,252 @@
+body {
+	color: #3e4d5c;
+	direction: ltr;
+
+	background: #fff;
+}
+#sauDN{
+    display: none;
+}
+body a{
+	font-size: 15px;
+}
+/*header*/
+.grid{
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+    height: 100%;
+}
+.grid__row{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.grid__column-2-4{
+    width: 20%;
+    
+}
+
+header{
+    position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        height: 85px;
+        width: 100%;
+    background-color: wheat;
+}
+
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;
+    
+}
+.logo{
+    flex: 0.5;
+}
+.menu{
+    flex: 3;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* tạo hover menu*/
+.menu {
+    font-family: 'Roboto', Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    }
+.menu li {
+            list-style: outside none none;
+            overflow: hidden;
+            position: relative;
+            border-radius: 3px;
+}
+
+.menu li:before,
+.menu li:after {
+            display: block;
+}
+
+.menu li:before {
+            bottom: 0%;
+}
+
+.menu li:after {
+            bottom: 50%;
+}
+.menu a {
+    backface-visibility: hidden;
+    display: block;
+    padding: 0.5em 1em;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+}
+.menu a:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
+.menu a:before {
+    bottom: 25%;
+}
+.menu a:after {
+    bottom: 75%;
+}
+.menu li:before,
+.menu li:after,
+.menu a:before,
+.menu a:after {
+    background-color: #2980b9;
+    position: absolute;
+    height: 25%;
+    left: 50%;
+    right: 50%;
+    content: '';
+    z-index: -1;
+    opacity: 0;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.menu li:before {
+    -webkit-transition-delay: 0.15s;
+    transition-delay: 0.15s;
+    }
+.menu li:after {
+    -webkit-transition-delay: 0.05s;
+    transition-delay: 0.05s;
+}
+.menu a:before {
+    -webkit-transition-delay: 0.1s;
+    transition-delay: 0.1s;
+}
+.menu a:after {
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+}
+.menu li:hover:before,
+.menu li:hover:after,
+.menu li:hover a:before,
+.menu li:hover a:after {
+    left: 0;
+    right: 0;
+    opacity: 1;
+}
+.menu li:hover:before {
+    -webkit-transition-delay: 0.3s;
+    transition-delay: 0.3s;
+    }
+.menu li:hover:after{
+    -webkit-transition-delay: 0.1s;
+     transition-delay: 0.1s;
+    }
+.menu li:hover a:before {
+    -webkit-transition-delay: 0.2s;
+     transition-delay: 0.2s;
+}
+
+.menu li:hover a:after {
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+}
+/* kết thúc hover menu*/
+.menu>li>a,
+.menu-right>li>a{
+    color: #333;
+}
+.menu-right{
+    flex: 1.9;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+/* .menu-right li{
+    position: relative;
+} */
+
+.menu-right li>ul a{
+   display: block;
+   background-color: #333;
+   margin-top: 1px;
+}
+.menu-right a:hover{
+    text-decoration: none;
+}
+.menu-right li>ul li:first-child >a{
+    border-radius: 0px 15px 0 0;
+}
+
+.menu-right li>ul li:last-child >a{
+    border-radius:  0 0 15px 15px;
+}
+
+
+.menu-right li>ul{
+    position: absolute;
+    display: none;
+    left: 223px;
+    width: 200px;
+}
+
+.menu-right li:hover ul{
+    display: block;
+}
+
+ .menu-right .DKDN>a:hover{
+     text-decoration: none;
+ }
+.menu-right>li>a{
+    font-size: 19px;
+}
+.menu-right >li:first-child{
+    
+    position: relative;
+}
+.menu-right >li>input{
+    width: 80%;
+    float: right;
+    border: none;               
+    border-bottom:1px solid #333;
+    background-color: transparent;
+    outline: none;
+}
+.menu-right >li:first-child i{
+    position: absolute;
+    right: 1px;
+    top: 6px;
+}
+/* đường dẫn */
+.duongDan{
+    margin-top: 85px;
+    height: 180px;
+    background-image: url(../ThanhToan/img/DuongDan.jpg);
+    background-position-x: 0%;
+    background-position-y: 50%;
+}
+.duongDan .duongDan-content{
+    height: 140px;
+    padding: 39px 15px 20px;
+}
+.duongDan .title h1, .duongDan .content p, .duongDan .content a {
+  text-align: center;
+    color: #ffffff  ;
+}
+.duongDan .content{
+    display: flex;
+    justify-content: center
+}
+.duongDan .content a:hover{
+    text-decoration: none;
+}
