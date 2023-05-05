@@ -407,3 +407,104 @@ ul {
 	padding: 0;
 }
 
+.panel-default .panel-heading {
+	color: white;
+	background-color: #a7b0b8;
+}
+
+.panel .panel-title {
+	padding-top: 0;
+	margin-bottom: 0;
+}
+
+
+.btn-primary {
+	background: black;
+	color: white;
+	border-radius: 0;
+	float: right;
+}
+
+.btn {
+	text-transform: uppercase;
+	display: inline-block;
+	padding: 6px 12px;
+	margin-bottom: 0;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1.42857143;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	touch-action: manipulation;
+	cursor: pointer;
+	user-select: none;
+	border-radius: 4px;
+}
+
+.chi-Tiet-XNH li {
+	border-bottom: solid 1px #ecebeb;
+	width: 100%;
+	overflow: hidden;
+	padding: 9px 0;
+}
+
+.chi-Tiet-XNH ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.chi-Tiet-XNH em {
+	font: 18px 'PT Sans Narrow', sans-serif;
+	float: left;
+	top: 2px;
+	color: rgba(0, 0, 0, .54);
+}
+
+.chi-Tiet-XNH strong {
+	font-size: 21px;
+	font-weight: normal;
+	float: right;
+	color: rgba(0, 0, 0, .54);
+}
+
+.btn-Huy {
+	margin-right: 20px;
+}
+
+.error {
+	color: red;
+}
+
+#from-Xac-Nhan {
+	width: 50%;
+	float: left;
+	padding-top: 9px;
+}
+
+#btn-TiepTuc-XacNhan {
+	width: 150px;
+	float: left;
+	padding-top: 9px;
+	color: #61c57a;
+	border-radius: 0;
+}
+
+#btn-TiepTuc-XacNhan,
+.btn-Huy {
+	margin-top: 20px;
+}
+
+.tri-An-KH:before {
+	content: "\f06b";
+}
+
+.free-Shipping:before {
+	content: "\f0d1";
+}
+
+.lien-he-KH:before {
+	content: "\f095";
+}
+
