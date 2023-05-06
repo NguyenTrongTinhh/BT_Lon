@@ -36,4 +36,20 @@ function kiemTraDC_HoTen() {
         }
 }
 
+function kiemTraDC_SoDT() {
+    var soDT = document.getElementById("txt-So-DT").value;
+    if (soDT.trim().length == 0) {
+        document.getElementById("error-So-DT").innerHTML = "Bạn chưa nhập số điện thoại !"
+        document.getElementById("txt-So-DT").focus();
+        return false;
+    } else
+        if (!/^(0[345789][0-9]{8}|1[89]00[0-9]{4})$$/.test(soDT)) {
+            document.getElementById("error-So-DT").innerHTML = "Số điện thoại sai định dạng.vd:0388654153"
+            document.getElementById("txt-So-DT").focus();
+            return false;
+        } else {
+            document.getElementById("error-So-DT").innerHTML = "Hợp lệ";
+            return true;
+        }
+}
 
