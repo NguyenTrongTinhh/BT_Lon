@@ -12,7 +12,21 @@
 
     <script src="../SiteMap/js/jquery-3.6.0.js"></script>
     <script src="../SiteMap/bootstrap-4.6.1-dist/js/bootstrap.min.js"></script>
+    <script>
+        window.onload = function () {
+            let kiemTraDN = JSON.parse(localStorage.getItem("flag"));
+            if (kiemTraDN) {
+                document.querySelector("#khongDN").style.display = "none";
+                document.querySelector("#sauDN").style.display = "block";
+            }
 
+            $("#dangxuat").click(function () {
+                document.querySelector("#khongDN").style.display = "block";
+                document.querySelector("#sauDN").style.display = "none";
+                localStorage.setItem("flag", false)
+            })
+        }
+    </script>
 </head>
 
 <body>
@@ -42,7 +56,7 @@
         <div class="grid">
             <div class="header">
                 <div class="logo">
-                    <a href="#"><img src="../img/logo.png" width="80%" height="86px" alt=""></a>
+                    <a href="#"><img src="../SiteMap/img/logo.jpg" width="80%" height="86px" alt=""></a>
                 </div>
                 <div class="menu">
                     <li><a href="../TrangChu/trangChu.html">Trang chủ</a></li>
