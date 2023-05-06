@@ -19,3 +19,21 @@ window.onload = function () {
         localStorage.setItem("flag", false)
     })
 }
+function kiemTraDC_HoTen() {
+    var hoTen = document.getElementById("txt-Ho-Ten").value;
+    if (hoTen.trim().length == 0) {
+        document.getElementById("errorTen").innerHTML = "Bạn chưa nhập tên !"
+        document.getElementById("txt-Ho-Ten").focus();
+        return false;
+    } else
+        if (!/^[A-Z][a-z]+(\s[A-Z][a-z]+)*$/.test(hoTen)) {
+            document.getElementById("errorTen").innerHTML = "Họ tên có ít nhất 2 chữ. Bắt đầu bằng chữ IN HOA"
+            document.getElementById("txt-Ho-Ten").focus();
+            return false;
+        } else {
+            document.getElementById("errorTen").innerHTML = "Hợp lệ";
+            return true;
+        }
+}
+
+
