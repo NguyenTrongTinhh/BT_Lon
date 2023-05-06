@@ -53,3 +53,15 @@ function kiemTraDC_SoDT() {
         }
 }
 
+function kiemTraDC_DCCT() {
+    var diaChi = document.getElementById("txt-Dia-Chi-CT").value;
+    if (diaChi.trim().length == 0) {
+        document.getElementById("error-Dia-Chi-CT").innerHTML = "Bạn cần nhập địa chỉ cụ thể !"
+        document.getElementById("txt-Dia-Chi-CT").focus();
+        return false;
+    } else {
+        document.getElementById("error-Dia-Chi-CT").innerHTML = "*";
+        return true;
+    }
+}
+
