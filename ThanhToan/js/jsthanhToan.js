@@ -92,7 +92,7 @@ function kiemTra_submid_PTVVC() {
     }
     else if (document.getElementById("giaoHoaToc").checked) {
         document.getElementById("error-PT-GH").innerHTML = " Bạn đã chọn phương thức giao hàng hỏa tốc";
-        document.getElementById("phiVanChuyen").innerHTML = "30,000₫";
+        document.getElementById("phiVanChuyen").innerHTML = "35,000₫";
 
         return true;
     } else {
@@ -100,4 +100,47 @@ function kiemTra_submid_PTVVC() {
         return false;
     }
 
+}
+// ==================================================================================
+
+function kiemTra_submid_PTTT() {
+    if (document.getElementById("thanhToan-nhanHang").checked) {
+        document.getElementById("error-PT-TT").innerHTML = " Bạn đã chọn phương thức thanh toán khi nhận hàng";
+    }
+    else if (document.getElementById("thanhToan-Momo").checked) {
+        document.getElementById("error-PT-TT").innerHTML = " Bạn đã chọn phương thức thanh toán momo";
+    }
+    else if (document.getElementById("thanhToan-Zalo").checked) {
+        document.getElementById("error-PT-TT").innerHTML = " Bạn đã chọn phương thức thanh toán zalo-pay";
+    }
+    else if (document.getElementById("thanhToan-NH").checked) {
+        document.getElementById("error-PT-TT").innerHTML = " Bạn đã chọn phương thức thanh toán bằng thẻ ngân hàng";
+    }
+    else if (document.getElementById("thanhToan-GN").checked) {
+        document.getElementById("error-PT-TT").innerHTML = " Bạn đã chọn phương thức thanh toán bằng thẻ tín dụng";
+    }
+    else {
+        alert("Bạn chưa chọn phương thức thanh toán");
+    }
+
+    if (!document.getElementById("dieuKhoan-TT").checked) {
+        alert("Để tiếp tục, bạn cần đồng ý với Điều khoản & Điều kiện !");
+    }
+}
+// ==================================================================================
+
+function tinhTien_TT() {
+
+    let tongTienHang = document.getElementById("tongTienHang").innerText.replace(/[^0-9]/g, '');
+    let phiVanChuyen = document.getElementById("phiVanChuyen").innerText.replace(/[^0-9]/g, '');
+    let phiBaoHiem = document.getElementById("phiBaoHiem").innerText.replace(/[^0-9]/g, '');
+    let phiGiamGia = document.getElementById("phiGiamGia").innerText.replace(/[^0-9]/g, '');
+
+    let thanhToan = Number(tongTienHang) + Number(phiVanChuyen) + Number(phiBaoHiem) - Number(phiGiamGia);
+    document.getElementById("tongThanhToan").innerHTML = thanhToan.toLocaleString('en-US', { style: 'currency', currency: 'VND' });
+}
+function dinhDangTienVN(n) {
+    return "" + n.toFixed(0).replace(/./g, function (c, i, a) {
+        return i > 0 && c !== "." && (a.length - i) % 3 === 0 ? "," + c : c;
+    });
 }
