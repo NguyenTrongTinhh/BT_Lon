@@ -83,3 +83,21 @@ function kiemTra_submid_DC() {
         alert("Muốn tiếp tục? Hãy nhập đủ thông tin điiiii.");
 }
 
+// ==================================================================================
+function kiemTra_submid_PTVVC() {
+    if (document.getElementById("giaoNhanh").checked) {
+        document.getElementById("error-PT-GH").innerHTML = " Bạn đã chọn phương thức giao hàng nhanh";
+        document.getElementById("phiVanChuyen").innerHTML = "25,000₫";
+        return true;
+    }
+    else if (document.getElementById("giaoHoaToc").checked) {
+        document.getElementById("error-PT-GH").innerHTML = " Bạn đã chọn phương thức giao hàng hỏa tốc";
+        document.getElementById("phiVanChuyen").innerHTML = "30,000₫";
+
+        return true;
+    } else {
+        alert("Bạn chưa chọn phương thức giao hàng");
+        return false;
+    }
+
+}
