@@ -65,3 +65,21 @@ function kiemTraDC_DCCT() {
     }
 }
 
+function kiemTraDC_ThanhPho() {
+    var thanhPho = document.getElementById("select-Thanh-Pho").value;
+    if (!(thanhPho == "macDinh")) {
+        document.getElementById("error-Thanh-Pho").innerHTML = "Hợp lệ";
+        return true;
+    } else {
+        document.getElementById("error-Thanh-Pho").innerHTML = "Bạn cần chọn thành phố !";
+        return false;
+    }
+
+}
+function kiemTra_submid_DC() {
+    if (kiemTraDC_HoTen() && kiemTraDC_SoDT() && kiemTraDC_DCCT() && kiemTraDC_ThanhPho()) {
+        return true;
+    } else
+        alert("Muốn tiếp tục? Hãy nhập đủ thông tin điiiii.");
+}
+
